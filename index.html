@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scripts, Automação e Embarcados em Python & Micropython</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background-image: url('img/fundo.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        body::before{
+            content: "";
+            position: fixed;
+            inset: 0;
+            background-image: inherit;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            filter: brightness(0.3);
+            z-index: -1;
+        }
+
+        .container{
+            max-width: 900px;
+            margin: auto;
+            padding: 40px, 20px;
+        }
+
+        .p1{
+            font-family: "Space Grotesk", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 300;
+            font-style: normal;
+            color: #e5e7eb;
+        }
+
+        .sub{
+            font-family: "Inter", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        .title {
+            font-family: "poppins", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 800;
+            font-style: normal;
+        }
+
+        h1{
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            color: #e5f3ff;
+        }
+
+        h2{
+            margin-top: 40px;
+            color: #bae6fd;
+        }
+
+        p{
+            line-height: 1.6;
+            font-size: 1.5em;
+        }
+
+        ul{
+            line-height: 1.8;
+        }
+
+        .cta{
+            margin-top: 40px;
+            padding: 25px;
+            background: rgba(red, green, blue, alpha);
+            border: 1px solid #d1d5db;
+            text-align: center;
+            border-radius: 23px;
+        }
+        .cta a{
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px 30px;
+            background: #38bdf8;
+            color: #020617;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .cta a:hover{
+            background: #0ea5e9;
+        }
+
+        img{
+            width: 24px;
+            height: 24px;
+            vertical-align: middle;
+            margin-right: 8px;
+        }
+
+        footer{
+            margin-top: 60px;
+            font-size: 0.9em;
+            color: #94a3b8;
+            text-align: center;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">
+            Scripts, Automação e Embarcados Sob Medida.
+        </h1>
+
+            <p class="p1">
+                Se você perde tempo com tarefas repetitivas ou precisa de soluções personalizadas para seus projetos, eu posso ajudar.
+                Scripts que não funcionam? eu resolvo isso para você de forma rápida e eficiente.
+            </p>
+
+        <h2 class="sub">O que eu faço é:</h2>
+        <ul>
+            <li class="p1">Automação de tarefas repetitivas;</li>
+            <li class="p1">Scripts para organizar arquivos e pastas;</li>
+            <li class="p1">Geração automaica de relatórios;</li>
+            <li class="p1">Correçao e ajustes de scripts em Python;</li>
+            <li class="p1">Pequenas soluções sob demanda;</li>
+            <li class="p1">Inclusão do Micropython dentro do seu processador;</li>
+            <li class="p1">suporte html e CSS.</li>
+            <li class="p1">outras soluções</li>
+        </ul>
+
+        <h2 class="sub">Exemplos Práticos</h2>
+        <ul>
+            <li class="p1">Script que renomeia centenas de aquivos em segundos</li>
+            <li class="p1">Automação que gera relatórios sem que você abra o excel</li>
+            <li class="p1">Correçao de erro que impede um script de rodar</script></li>
+        </ul>
+
+        <div class="cta">
+            <p class="p1">
+                Explique o seu problema e eu volto com a melhor forma de resolver.         
+            </p>
+
+            <p class="p1">
+                Se você precisa de uma solução rápida e funcional, entre em contato comigo!
+            </p>
+
+            <a href="https://wa.me/5531986118454" target="_blank">
+                <img src="/img/whatsapp.svg" alt="WhatsApp">
+                Fale Comigo Pelo WhatsApp
+            </a>
+        </div>
+
+        <footer class="foot">
+            © 2026 - Script e Automação em Python.
+        </footer>
+    </div>
+</body>
+</html>
